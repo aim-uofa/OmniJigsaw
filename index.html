@@ -176,7 +176,7 @@
         <a href="#results" class="nav-link">Results</a>
         <a href="#analysis" class="nav-link">Analysis</a>
         <a href="#examples" class="nav-link">Examples</a>
-        <!-- <a href="#citation" class="nav-link">Citation</a> -->
+        <a href="#citation" class="nav-link">Citation</a>
       </nav>
       <button id="menu-toggle" class="md:hidden text-white" aria-label="Toggle menu">
         <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 6h16M4 12h16M4 18h16"/></svg>
@@ -193,7 +193,7 @@
     <a href="#results" class="text-xl text-white font-medium" onclick="closeMobileNav()">Results</a>
     <a href="#analysis" class="text-xl text-white font-medium" onclick="closeMobileNav()">Analysis</a>
     <a href="#examples" class="text-xl text-white font-medium" onclick="closeMobileNav()">Examples</a>
-    <!-- <a href="#citation" class="text-xl text-white font-medium" onclick="closeMobileNav()">Citation</a> -->
+    <a href="#citation" class="text-xl text-white font-medium" onclick="closeMobileNav()">Citation</a>
   </div>
 
   <main>
@@ -229,6 +229,27 @@
           </div>
         </div>
 
+        <div class="mt-8 flex justify-center gap-4 fade-in-up delay-200">
+          <a href="https://arxiv.org/abs/2604.08209" target="_blank" 
+            class="flex items-center gap-2.5 px-8 py-3 rounded-[12px] border border-white/10 bg-[#002855] hover:bg-[#003a75] transition-all duration-300 shadow-lg">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+              <polyline points="14 2 14 8 20 8"></polyline>
+              <line x1="16" y1="13" x2="8" y2="13"></line>
+              <line x1="16" y1="17" x2="8" y2="17"></line>
+            </svg>
+            <span class="font-semibold tracking-wide">Paper</span>
+          </a>
+
+          <a href="https://github.com/aim-uofa/OmniJigsaw" target="_blank" 
+   class="flex items-center gap-2.5 px-8 py-3 rounded-[12px] border border-white/10 bg-white/10 hover:bg-white/20 transition-all duration-300 shadow-lg">
+            <!-- GitHub 图标保持不变 -->
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.285 0 .315.21.69.825.57C20.565 21.795 24 17.31 24 12c0-6.63-5.37-12-12-12z"/>
+            </svg>
+            <span class="font-semibold tracking-wide">Code</span>
+          </a>
+        </div>
       </div>
     </section>
 
@@ -631,7 +652,7 @@
       </div>
     </section>
 
-    <!-- Citation (hidden until we have the arXiv link)
+    <!-- Citation -->
     <section id="citation" class="py-20 px-6">
       <div class="max-w-3xl mx-auto reveal">
         <div class="cite-heading">
@@ -639,11 +660,14 @@
           <h2 class="cite-title">BibTeX</h2>
         </div>
         <div class="cite-card">
-          <pre id="citation-block">@article{jia2026omnijigsaw,
-  title={OmniJigsaw: Enhancing Omni-Modal Reasoning via Modality-Orchestrated Reordering},
-  author={Jia, Yiduo and Zhu, Muzhi and Zhong, Hao and Liu, Mingyu and Xi, Yuling and Chen, Hao and Qin, Bin and Yang, Yongjie and Luo, Zhenbo and Shen, Chunhua},
-  journal={arXiv preprint},
-  year={2026}
+          <pre id="citation-block">@misc{jia2026omnijigsawenhancingomnimodalreasoning,
+      title={OmniJigsaw: Enhancing Omni-Modal Reasoning via Modality-Orchestrated Reordering}, 
+      author={Yiduo Jia and Muzhi Zhu and Hao Zhong and Mingyu Liu and Yuling Xi and Hao Chen and Bin Qin and Yongjie Yang and Zhenbo Luo and Chunhua Shen},
+      year={2026},
+      eprint={2604.08209},
+      archivePrefix={arXiv},
+      primaryClass={cs.CV},
+      url={https://arxiv.org/abs/2604.08209}, 
 }</pre>
           <button id="copy-citation" class="cite-button" type="button" onclick="copyBibtex()">
             Copy Citation
@@ -652,7 +676,6 @@
         </div>
       </div>
     </section>
-    -->
   </main>
 
   <!-- Footer -->

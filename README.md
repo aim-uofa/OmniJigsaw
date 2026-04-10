@@ -12,7 +12,7 @@
 <img src="https://capsule-render.vercel.app/api?type=rect&color=0:000428,50:004e92,100:000428&height=2&width=750" alt="bottom-border">
 <br>
 
-[![Project Page](https://img.shields.io/badge/Project_Page-Explore_Now-002855?style=for-the-badge&logo=googlechrome&logoColor=white)](https://aim-uofa.github.io/OmniJigsaw/)
+[![Paper](https://img.shields.io/badge/Paper-Arxiv%20Link-green)](https://arxiv.org/abs/2604.08209) [![Project](https://img.shields.io/badge/Project-Page-blue)](https://aim-uofa.github.io/OmniJigsaw/) 
 
 <br>
 
@@ -113,3 +113,21 @@ CMM compels the model to jointly analyze visual and auditory cues by masking les
 <div align="center">
   <p><em>For more details, please visit our <a href="https://aim-uofa.github.io/OmniJigsaw/">Project Page</a>.</em></p>
 </div>
+
+<br>
+
+## 📜 Citation
+
+If you find OmniJigsaw useful for your research, please cite:
+
+```bibtex
+@misc{jia2026omnijigsawenhancingomnimodalreasoning,
+      title={OmniJigsaw: Enhancing Omni-Modal Reasoning via Modality-Orchestrated Reordering}, 
+      author={Yiduo Jia and Muzhi Zhu and Hao Zhong and Mingyu Liu and Yuling Xi and Hao Chen and Bin Qin and Yongjie Yang and Zhenbo Luo and Chunhua Shen},
+      year={2026},
+      eprint={2604.08209},
+      archivePrefix={arXiv},
+      primaryClass={cs.CV},
+      url={https://arxiv.org/abs/2604.08209}, 
+}
+```
