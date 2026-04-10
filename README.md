@@ -12,7 +12,7 @@
 <img src="https://capsule-render.vercel.app/api?type=rect&color=0:000428,50:004e92,100:000428&height=2&width=750" alt="bottom-border">
 <br>
 
-[![Project Page](https://img.shields.io/badge/Project_Page-Explore_Now-002855?style=for-the-badge&logo=googlechrome&logoColor=white)](https://HeiXiong620.github.io/OmniJigsaw/)
+[![Project Page](https://img.shields.io/badge/Project_Page-Explore_Now-002855?style=for-the-badge&logo=googlechrome&logoColor=white)](https://aim-uofa.github.io/OmniJigsaw/)
 
 <br>
 
@@ -37,7 +37,7 @@ Recognizing that the efficacy of such proxy tasks is fundamentally tied to puzzl
 - 🧩 **Self-Supervised Proxy Task:** Pioneers jigsaw-based RL post-training in the omni-modal domain using temporal reordering of shuffled audio-visual clips—requiring zero manual annotation.
 - 🎯 **Modality Orchestration:** Three strategies (JMI, SMS, CMM) that govern cross-modal information flow, investigating the bi-modal shortcut phenomenon and compelling deep multi-modal reasoning.
 - 🛠️ **Scalable Data Pipeline:** A two-stage coarse-to-fine filtering pipeline (signal-based + semantic CoT screening) that transforms massive unannotated data into high-quality training puzzles.
-- 📈 **15 Benchmark Gains:** CMM achieves **+4.38** on MLVU-Test, **+2.50** on MMAR, and **+1.70** on OmniVideoBench over a strong Qwen3-Omni baseline. *(Full quantitative tables are available on our [Project Page](https://HeiXiong620.github.io/OmniJigsaw/))*
+- 📈 **15 Benchmark Gains:** CMM achieves **+4.38** on MLVU-Test, **+2.50** on MMAR, and **+1.70** on OmniVideoBench over a strong Qwen3-Omni baseline. *(Full quantitative tables are available on our [Project Page](https://aim-uofa.github.io/OmniJigsaw/))*
 
 <br>
 
@@ -68,7 +68,7 @@ Our extensive analysis reveals several critical insights regarding cross-modal l
 3. **Data Quality is Critical:** Training without the filtering pipeline leads to significant degradation.
 4. **Discount Factor as Catalyst:** The accuracy-dependent discount factor suppresses sub-optimal solutions, preventing premature convergence.
 
-*(Specific quantitative ablation results are available on our [Project Page](https://HeiXiong620.github.io/OmniJigsaw/))*
+*(Specific quantitative ablation results are available on our [Project Page](https://aim-uofa.github.io/OmniJigsaw/))*
 
 <div align="center">
   <img src="images/radar_compare.png" width="85%" alt="Radar Comparison">
@@ -111,5 +111,5 @@ CMM compels the model to jointly analyze visual and auditory cues by masking les
 <br>
 
 <div align="center">
-  <p><em>For more details, please visit our <a href="https://HeiXiong620.github.io/OmniJigsaw/">Project Page</a>.</em></p>
+  <p><em>For more details, please visit our <a href="https://aim-uofa.github.io/OmniJigsaw/">Project Page</a>.</em></p>
 </div>
