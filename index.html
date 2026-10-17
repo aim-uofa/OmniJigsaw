@@ -9,11 +9,11 @@
   <meta property="og:description" content="Self-supervised reinforcement learning post-training for omni-modal reasoning. Explore the framework, experimental results, analyses, and qualitative examples.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://aim-uofa.github.io/OmniJigsaw/">
-  <meta property="og:image" content="https://aim-uofa.github.io/OmniJigsaw/images/omnijigsaw_pipeline.png">
+  <meta property="og:image" content="https://aim-uofa.github.io/OmniJigsaw/docs/images/omnijigsaw_pipeline.png">
   <meta name="theme-color" content="#0a1628">
   <link rel="canonical" href="https://aim-uofa.github.io/OmniJigsaw/">
-  <link rel="stylesheet" href="site.css">
-  <script src="site.js" defer></script>
+  <link rel="stylesheet" href="docs/site.css">
+  <script src="docs/site.js" defer></script>
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
@@ -58,15 +58,15 @@
           Paper
         </a>
         <a class="button" href="https://github.com/aim-uofa/OmniJigsaw">
-          <img class="button-icon" src="icons/github.svg" alt="" width="18" height="18">
+          <img class="button-icon" src="docs/icons/github.svg" alt="" width="18" height="18">
           Code
         </a>
         <a class="button data-link" href="https://www.modelscope.cn/datasets/Jiayiduo/OmniJigsaw-8K" aria-label="Dataset on ModelScope" title="ModelScope">
-          <img class="button-icon" src="icons/modelscope.ico" alt="" width="18" height="18">
+          <img class="button-icon" src="docs/icons/modelscope.ico" alt="" width="18" height="18">
           Dataset
         </a>
         <a class="button data-link" href="https://huggingface.co/datasets/zju/OmniJigsaw-8K" aria-label="Dataset on Hugging Face" title="Hugging Face">
-          <img class="button-icon" src="icons/huggingface.svg" alt="" width="18" height="18">
+          <img class="button-icon" src="docs/icons/huggingface.svg" alt="" width="18" height="18">
           Dataset
         </a>
       </div>
@@ -113,8 +113,8 @@
         <p>We investigate temporal reordering as a self-supervised objective for omni-modal reasoning, where the model is trained to recover the original chronological order from a shuffled sequence of synchronized audio-visual clips.</p>
       </div>
       <figure class="figure wide-figure framework-figure">
-        <a class="figure-link" href="images/omnijigsaw_pipeline.png" aria-label="View the OmniJigsaw framework (PNG)">
-          <img src="images/omnijigsaw_pipeline.png" alt="OmniJigsaw framework showing joint modality integration, clip-level modality masking, and sample-level modality selection before temporal reordering." loading="lazy" decoding="async" width="2400" height="1350">
+        <a class="figure-link" href="docs/images/omnijigsaw_pipeline.png" aria-label="View the OmniJigsaw framework (PNG)">
+          <img src="docs/images/omnijigsaw_pipeline.png" alt="OmniJigsaw framework showing joint modality integration, clip-level modality masking, and sample-level modality selection before temporal reordering." loading="lazy" decoding="async" width="2400" height="1350">
         </a>
         <figcaption><span class="caption-text"><strong>OmniJigsaw framework for self-supervised omni-modal RL post-training.</strong> Three modality orchestration strategies are illustrated: Joint Modality Integration (JMI, top) exposing both audio-visual streams; Sample-level Modality Selection (SMS, bottom) prioritizing the primary informative modality; and Clip-level Modality Masking (CMM, center) imposing a clip-wise information bottleneck. All strategies share the same temporal reordering objective.</span></figcaption>
       </figure>
@@ -141,8 +141,8 @@
     <section class="section container" id="data-pipeline" aria-labelledby="data-pipeline-title">
       <div class="section-head"><h2 id="data-pipeline-title">Data Curation Pipeline</h2></div>
       <figure class="figure wide-figure">
-        <a class="figure-link" href="images/data_pipeline.png" aria-label="View the data-curation pipeline (PNG)">
-          <img src="images/data_pipeline.png" alt="Two-stage puzzle curation: signal-based heuristic filtering followed by semantic screening for temporal coherence and identifiable state transitions." loading="lazy" decoding="async" width="2000" height="709">
+        <a class="figure-link" href="docs/images/data_pipeline.png" aria-label="View the data-curation pipeline (PNG)">
+          <img src="docs/images/data_pipeline.png" alt="Two-stage puzzle curation: signal-based heuristic filtering followed by semantic screening for temporal coherence and identifiable state transitions." loading="lazy" decoding="async" width="2000" height="709">
         </a>
         <figcaption><span class="caption-text"><strong>Puzzle-quality curation pipeline for OmniJigsaw.</strong> Raw videos are first filtered for valid video-audio streams and sufficient low-level dynamics, then screened for semantically recoverable chronological progression.</span></figcaption>
       </figure>
@@ -313,24 +313,24 @@
       </div>
       <div class="curve-grid">
         <figure class="figure">
-          <a class="figure-link" href="images/df_ablation_train.png" aria-label="View training accuracy curves (PNG)"><img src="images/df_ablation_train.png" alt="Training accuracy with and without the accuracy-dependent discount factor." loading="lazy" decoding="async" width="2000" height="1284"></a>
+          <a class="figure-link" href="docs/images/df_ablation_train.png" aria-label="View training accuracy curves (PNG)"><img src="docs/images/df_ablation_train.png" alt="Training accuracy with and without the accuracy-dependent discount factor." loading="lazy" decoding="async" width="2000" height="1284"></a>
           <figcaption><span class="caption-text">Training accuracy dynamics w/ and w/o Discount Factor.</span></figcaption>
         </figure>
         <figure class="figure">
-          <a class="figure-link" href="images/df_ablation_val.png" aria-label="View validation accuracy curves (PNG)"><img src="images/df_ablation_val.png" alt="Validation accuracy with and without the accuracy-dependent discount factor." loading="lazy" decoding="async" width="2000" height="1256"></a>
+          <a class="figure-link" href="docs/images/df_ablation_val.png" aria-label="View validation accuracy curves (PNG)"><img src="docs/images/df_ablation_val.png" alt="Validation accuracy with and without the accuracy-dependent discount factor." loading="lazy" decoding="async" width="2000" height="1256"></a>
           <figcaption><span class="caption-text">Validation accuracy dynamics w/ and w/o Discount Factor.</span></figcaption>
         </figure>
         <figure class="figure">
-          <a class="figure-link" href="images/reward_compare.png" aria-label="View reward dynamics (PNG)"><img src="images/reward_compare.png" alt="Task reward curves for JMI, CMM, VideoJigsaw, and AudioJigsaw." loading="lazy" decoding="async" width="2000" height="1283"></a>
+          <a class="figure-link" href="docs/images/reward_compare.png" aria-label="View reward dynamics (PNG)"><img src="docs/images/reward_compare.png" alt="Task reward curves for JMI, CMM, VideoJigsaw, and AudioJigsaw." loading="lazy" decoding="async" width="2000" height="1283"></a>
           <figcaption><span class="caption-text">Task reward (w/o <var>R<sub>rep</sub></var>, <var>R<sub>fmt</sub></var>) dynamics of JMI, CMM, VideoJigsaw and AudioJigsaw.</span></figcaption>
         </figure>
       </div>
       <figure class="figure wide-figure analysis-figure">
-        <a class="figure-link" href="images/radar_compare.png" aria-label="View the strategy comparison (PNG)"><img src="images/radar_compare.png" alt="Comparison of JMI, CMM, and uni-modal jigsaw baselines across video, audio, and omni-modal benchmarks." loading="lazy" decoding="async" width="2000" height="614"></a>
+        <a class="figure-link" href="docs/images/radar_compare.png" aria-label="View the strategy comparison (PNG)"><img src="docs/images/radar_compare.png" alt="Comparison of JMI, CMM, and uni-modal jigsaw baselines across video, audio, and omni-modal benchmarks." loading="lazy" decoding="async" width="2000" height="614"></a>
         <figcaption><span class="caption-text"><strong>Performance comparison of JMI, CMM, and uni-modal jigsaws across video, audio, and omni-modal benchmarks.</strong> CMM’s consistent superiority and JMI’s performance degradation relative to uni-modal references empirically support the “bi-modal shortcut phenomenon”.</span></figcaption>
       </figure>
       <figure class="figure wide-figure analysis-figure">
-        <a class="figure-link" href="images/bar_compare.png" aria-label="View the sub-capability comparison (PNG)"><img src="images/bar_compare.png" alt="Fine-grained sub-capability comparison between CMM and SMS on MLVU, MMAR, and Daily-Omni." loading="lazy" decoding="async" width="2000" height="763"></a>
+        <a class="figure-link" href="docs/images/bar_compare.png" aria-label="View the sub-capability comparison (PNG)"><img src="docs/images/bar_compare.png" alt="Fine-grained sub-capability comparison between CMM and SMS on MLVU, MMAR, and Daily-Omni." loading="lazy" decoding="async" width="2000" height="763"></a>
         <figcaption><span class="caption-text"><strong>Sub-capability performance comparison between CMM and SMS.</strong> CMM’s predominant superiority over SMS highlights the efficacy of clip-level orchestration in capturing temporally non-uniform audio-visual cues, whereas sample-level arbitration often misses local high-value modal information.</span></figcaption>
       </figure>
     </section>
@@ -338,26 +338,26 @@
     <section class="section container" id="examples" aria-labelledby="examples-title">
       <div class="section-head"><h2 id="examples-title">Examples</h2></div>
       <figure class="figure wide-figure">
-        <a class="figure-link" href="images/rollout_compare.png" aria-label="View reasoning traces (PNG)"><img src="images/rollout_compare.png" alt="Illustrative reasoning traces at training step 800: CMM integrates visual and auditory cues, while JMI relies on linguistic cues." loading="lazy" decoding="async" width="2000" height="1125"></a>
+        <a class="figure-link" href="docs/images/rollout_compare.png" aria-label="View reasoning traces (PNG)"><img src="docs/images/rollout_compare.png" alt="Illustrative reasoning traces at training step 800: CMM integrates visual and auditory cues, while JMI relies on linguistic cues." loading="lazy" decoding="async" width="2000" height="1125"></a>
         <figcaption><span class="caption-text"><strong>Illustrative CoT comparison between CMM and JMI at training step 800.</strong> CMM (left) guides the model to jointly analyze visual and auditory cues by masking less salient modalities (dashed boxes), while JMI (right) exhibits a bi-modal shortcut by “solely relying [on] linguistic cues” (underlined text) and bypassing the necessary visual analysis.</span></figcaption>
       </figure>
       <div class="figure-pair">
         <figure class="figure">
-          <a class="figure-link" href="images/qual_subscene_captioning.png" aria-label="View the captioning example (PNG)"><img src="images/qual_subscene_captioning.png" alt="Sub-scene captioning example comparing the base model and OmniJigsaw-CMM." loading="lazy" decoding="async" width="2000" height="1303"></a>
+          <a class="figure-link" href="docs/images/qual_subscene_captioning.png" aria-label="View the captioning example (PNG)"><img src="docs/images/qual_subscene_captioning.png" alt="Sub-scene captioning example comparing the base model and OmniJigsaw-CMM." loading="lazy" decoding="async" width="2000" height="1303"></a>
           <figcaption><span class="caption-text"><strong>Qualitative example of Sub-Scene Captioning.</strong> Comparison between the Qwen3-Omni-30B-A3B-Instruct baseline and its OmniJigsaw (CMM)-post-trained variant.</span></figcaption>
         </figure>
         <figure class="figure">
-          <a class="figure-link" href="images/qual_video_summarization.png" aria-label="View the summarization example (PNG)"><img src="images/qual_video_summarization.png" alt="Video summarization example comparing the base model and OmniJigsaw-CMM." loading="lazy" decoding="async" width="2000" height="1303"></a>
+          <a class="figure-link" href="docs/images/qual_video_summarization.png" aria-label="View the summarization example (PNG)"><img src="docs/images/qual_video_summarization.png" alt="Video summarization example comparing the base model and OmniJigsaw-CMM." loading="lazy" decoding="async" width="2000" height="1303"></a>
           <figcaption><span class="caption-text"><strong>Qualitative example of Video Summarization.</strong> Comparison between the Qwen3-Omni-30B-A3B-Instruct baseline and its OmniJigsaw (CMM)-post-trained variant.</span></figcaption>
         </figure>
       </div>
       <div class="figure-pair screening-pair">
         <figure class="figure">
-          <a class="figure-link" href="images/data_case_1.png" aria-label="View the first screening example (PNG)"><img src="images/data_case_1.png" alt="A video rejected during semantic screening because of indistinct state changes." loading="lazy" decoding="async" width="1126" height="2000"></a>
+          <a class="figure-link" href="docs/images/data_case_1.png" aria-label="View the first screening example (PNG)"><img src="docs/images/data_case_1.png" alt="A video rejected during semantic screening because of indistinct state changes." loading="lazy" decoding="async" width="1126" height="2000"></a>
           <figcaption><span class="caption-text"><strong>Case 1:</strong> Indistinct State Changes — rejected by semantic screening.</span></figcaption>
         </figure>
         <figure class="figure">
-          <a class="figure-link" href="images/data_case_2.png" aria-label="View the second screening example (PNG)"><img src="images/data_case_2.png" alt="A video rejected during semantic screening because of a disjointed narrative." loading="lazy" decoding="async" width="1126" height="2000"></a>
+          <a class="figure-link" href="docs/images/data_case_2.png" aria-label="View the second screening example (PNG)"><img src="docs/images/data_case_2.png" alt="A video rejected during semantic screening because of a disjointed narrative." loading="lazy" decoding="async" width="1126" height="2000"></a>
           <figcaption><span class="caption-text"><strong>Case 2:</strong> Disjointed Narrative — rejected by semantic screening.</span></figcaption>
         </figure>
       </div>
