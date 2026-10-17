@@ -1,0 +1,38 @@
+# Python
+__pycache__/
+*.pyc
+.venv/
+
+# Build and development caches
+build/
+dist/
+*.egg-info/
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+
+# OS and editors
+.DS_Store
+.vscode/
+.idea/
+
+# Runtime outputs
+wandb/
+outputs/
+tensorboard_log/
+logs/
+checkpoints/
+omnijigsaw/*/rollout_data_*/
+omnijigsaw/*/validate_res_*/
+
+# Local models and datasets
+weights/
+datasets/
+*.pt
+*.pth
+*.ckpt
+*.safetensors
+
+# Bundle the customized vLLM source; keep downloaded wheels and extracted files local.
+packages/*
+!packages/vllm-qwen3-omni.zip

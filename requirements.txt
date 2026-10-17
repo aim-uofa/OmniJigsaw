@@ -1,0 +1,17 @@
+cmake>=3.26.1
+ninja
+packaging>=24.2
+setuptools>=77.0.3,<80.0.0
+setuptools-scm>=8
+wheel
+jinja2>=3.1.6
+regex
+debugpy
+decord
+av
+librosa
+mathruler
+latex2sympy2_extended
+math_verify
+qwen-omni-utils==0.0.8
+opencv-python-headless==4.11.0.86
