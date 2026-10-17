@@ -1,6 +1,10 @@
 <div align="center">
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:000428,50:002855,100:004e92&height=240&section=header&text=%F0%9F%A7%A9%20OmniJigsaw&fontSize=70&fontAlignY=36&desc=Enhancing%20Omni-Modal%20Reasoning%20via%20Modality-Orchestrated%20Reordering&descAlignY=58&descSize=18&fontColor=ffffff&v=4" width="100%" alt="OmniJigsaw: Enhancing Omni-Modal Reasoning via Modality-Orchestrated Reordering">
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:000428,50:002855,100:004e92&height=240&section=header&text=%F0%9F%A7%A9%20OmniJigsaw&fontSize=70&fontAlignY=36&desc=Enhancing%20Omni-Modal%20Reasoning%20via%20Modality-Orchestrated%20Reordering&descAlignY=58&descSize=18&fontColor=ffffff&v=4" width="100%" align="top" alt="OmniJigsaw: Enhancing Omni-Modal Reasoning via Modality-Orchestrated Reordering">
+
+<p align="center">
+  <img src="https://img.shields.io/badge/NeurIPS-2026-8B1E2D?style=flat&amp;labelColor=555555" alt="NeurIPS 2026" height="28">
+</p>
 
 [Yiduo&nbsp;Jia](https://scholar.google.com/citations?user=oeqinEUAAAAJ&hl=zh-CN)<sup>1,&#42;</sup>, &nbsp; [Muzhi&nbsp;Zhu](https://scholar.google.com/citations?user=064gBH4AAAAJ&hl=zh-CN&oi=ao)<sup>1,&#42;</sup>, &nbsp; [Hao&nbsp;Zhong](https://scholar.google.com/citations?user=TnwXIMQAAAAJ&hl=zh-CN)<sup>1</sup>, &nbsp; [Mingyu&nbsp;Liu](https://mingyulau.github.io/)<sup>1</sup>, &nbsp; [Yuling&nbsp;Xi](https://scholar.google.com/citations?hl=zh-CN&user=5n05YgoAAAAJ&view_op=list_works&sortby=pubdate)<sup>1†</sup>, &nbsp; [Hao&nbsp;Chen](https://scholar.google.com/citations?user=FaOqRpcAAAAJ)<sup>1†</sup>,<br>
 [Bin&nbsp;Qin](https://scholar.google.com/citations?hl=zh-CN&user=QaZ9uQ8AAAAJ)<sup>2</sup>, &nbsp; [Yongjie&nbsp;Yang](https://openreview.net/profile?id=~Yongjie_Yang3)<sup>2</sup>, &nbsp; [Zhenbo&nbsp;Luo](https://scholar.google.com/citations?user=Sh6y-_EAAAAJ&hl=zh-CN)<sup>2</sup>, &nbsp; [Chunhua&nbsp;Shen](https://cshen.github.io)<sup>1,3†</sup>
